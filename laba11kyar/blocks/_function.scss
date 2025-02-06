@@ -1,0 +1,27 @@
+$base-font-size: 16px;
+$header-font-size: 2em;
+$text-font-size: 1em;
+
+// Функция для расчета размера шрифта заголовка
+@function header_size() {
+    @return $header-font-size;
+}
+
+// Функция для расчета размера шрифта текста
+@function text_size($is_large: false) {
+    @if ($is_large) {
+        @return $base-font-size * 1.4; // Увеличенный размер текста
+    } @else {
+        @return $base-font-size; // Базовый размер текста
+    }
+}
+
+h2 {
+    font-size: header_size(); // Применение функции для заголовка
+}
+
+.hehe {
+    font-size: text_size(); // Применение базового размера текста
+}
+
+

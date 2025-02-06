@@ -1,0 +1,43 @@
+$background-color: rgb(133, 190, 195);
+$text-color: black;
+$red-color: red;
+
+body {
+    background-color: $background-color;
+
+    h1 {
+        text-align: center;
+        color: $text-color;
+        font-style: italic;
+    }
+
+    h2, h3 {
+        text-indent: 40px;
+    }
+
+    p {
+        text-indent: 40px;
+    }
+}
+
+.red-text {
+    color: $red-color;
+}
+
+.large-text {
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.xx-large-text {
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.table-caption {
+    font-size: larger;
+}
+
+aside {
+    float: right;
+}

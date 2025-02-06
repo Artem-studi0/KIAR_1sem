@@ -1,0 +1,29 @@
+h1,h2,h3{
+color: magenta;
+
+font-family:Monotype Corsiva;
+
+}
+.one{
+
+color:red;
+font-size: 18pt;
+font-family: 'Times New Roman';
+
+
+}
+.two{
+color:yellow;
+font-size:  20pt;
+font-family: 'Times New Roman'
+
+
+}
+.three{
+
+
+font-size: 22pt;
+font-family: 'Times New Roman';
+
+color:green
+}

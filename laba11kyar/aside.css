@@ -1,0 +1,33 @@
+aside {
+  background-color: rgba(253, 211, 255, 0);
+  flex: 1 1 300px;
+  margin-top: 20px;
+}
+aside h2 {
+  color: rgb(0, 0, 0);
+  width: 100%;
+}
+aside article {
+  background-color: rgb(128, 57, 31);
+  border: 4px solid rgb(0, 0, 0);
+  padding: 0;
+}
+aside article figure {
+  margin: 5px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 25% 72%;
+  grid-gap: 5px;
+}
+aside article figure img {
+  width: 100%;
+  height: 130px;
+}
+aside article figure figcaption {
+  color: rgb(0, 0, 0);
+}
+@media (min-width: 816px) {
+  aside {
+    margin-left: 20px;
+  }
+}/*# sourceMappingURL=aside.css.map */

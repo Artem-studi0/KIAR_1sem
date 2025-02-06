@@ -1,0 +1,48 @@
+store {
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: space-between;
+   
+}
+
+products {
+    margin: 20px;
+}
+
+product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+name {
+    font-size: 1.5em;
+    color: #333;
+    flex: 1;
+}
+
+price {
+    font-size: 1.2em;
+    color: green;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+description {
+    font-size: 1em;
+    color: #666;
+    flex: 1;
+    margin-top: 10px;
+    margin-left:50px;
+}
+products{
+    align-items: center;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 100px;
+    color:red;
+}

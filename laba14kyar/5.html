@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+<svg width="100%" height="500px">
+    <defs>
+        <radialGradient id="circle">
+            <stop offset="0%" stop-color="green"/>
+            <stop offset="100%" stop-color="green"/>
+        </radialGradient>
+        <linearGradient id="triangle">
+            <stop offset="0%" stop-color="green"/>
+            <stop offset="100%" stop-color="orange"/>             
+        </linearGradient>
+    </defs>
+
+    <!-- Круг с изменением цвета контура -->
+    <circle id="circleEl" cx="100" cy="70" r="50" fill="blue" stroke="blue" stroke-width="5">
+        <animate attributeName="stroke" dur="1s" begin="mouseover" from="blue" to="red" fill="freeze" />
+        <animate attributeName="stroke" dur="1s" begin="mouseout" from="red" to="blue" fill="freeze" />
+    </circle>
+
+    <!-- Эллипс с изменением заливки при щелчке -->
+    <ellipse id="ellipseEl" cx="390" cy="70" rx="100" ry="50" fill="url(#circle)">
+        <animate attributeName="fill" dur="1s" begin="click" from="url(#circle)" to="purple" fill="freeze" />
+    </ellipse>
+
+    <!-- Квадрат с анимацией появления контура -->
+    <rect id="rectEl" x="160" y="20" width="120" height="100" fill="yellow" stroke="black" stroke-width="0px">
+        <animate attributeName="stroke-width" dur="2s" from="0" to="3" repeatCount="indefinite" />
+    </rect>
+
+    <!-- Треугольник с линейной градиентной заливкой -->
+    <polygon points="500,120 550,20 600,120" fill="url(#triangle)" stroke-width="3px">
+        <animate  dur="1s" begin="mouseover"  fill="freeze" restart="whenNotActive"/>
+    </polygon>
+
+    <polyline points="30,130 340,130 275,175 600,175" style="stroke-width: 2;fill:white;stroke:purple">
+    </polyline>
+</svg>
+</body>
+</html>

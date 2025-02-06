@@ -1,0 +1,100 @@
+@import"_mixin";
+$green: rgb(197, 255, 228);
+$hover:  rgb(255, 200, 253);
+$red: rgb(254, 235, 235);
+
+nav{
+    @include flex;
+    flex: 1 1 100%;
+    background-image: url(../img/ii.webp);
+    height: 10vh;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    input {
+        display: none;
+    }
+    label{
+        height: 100%;
+        img{
+            height: 100%;
+            margin-left: 50px;
+        }
+    }
+    ul{
+        @include flex;
+        margin-top: 10px;
+        padding: 0;
+        flex: 0 1 100%;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        list-style-type: none;
+        justify-content: end;
+        li{
+            display: inline-block;
+            width: 20%;
+            margin-left: 10px;
+            margin-top: 10px;
+            a{
+                background-color: $red;
+                transition: 0.2s;
+                border-radius: 3px;
+                box-shadow: 3px 3px 3px black ;
+                box-sizing: border-box;
+                color: rgb(82, 0, 104); 
+                padding: 7px 24px 10px 24px;
+                width:80%;
+                height: 35px;
+                font-size: 20px;
+                text-align: center;
+                display: inline-block;
+                text-decoration: none;
+                &:hover{
+                    box-shadow: 1px 1px 1px black;
+                    transform: translate(1px 1px);
+                    background-color: hover(&i, &green, &hover);
+                }
+            }
+
+        }
+    }
+   @media (max-width: 700px){
+        height: 100%;
+        margin-bottom: 50px;
+        label{
+            width: 96.5%;
+            height: 20px;
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            img{
+                margin-left: 5px;
+            }
+        }
+        ul{
+            transform: translateY(-200px);
+            transition: 0.001s;
+            opacity: 0;
+            position: absolute;
+            flex: 0 1 100%;
+            flex-wrap: wrap;
+            margin-left: 50px;
+            li{
+                margin-top: 10px;
+                flex: 1 1 100%;
+            }
+        }
+        input{
+            &:checked~ul{
+                transform: translateY(5px);
+                opacity: 1;
+                position: relative;
+            }
+            &:checked+label{
+                top: 5px;
+                img{
+                    margin: 5px 0 0 10px;
+                   
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>3</title>
+<style>
+body{
+font-size: 1.2em;
+color: white;
+}
+h1 {text-align: center;}
+form {
+width: 460px;
+background-color: indigo;
+padding-top: 2px;
+padding-left: 30px;
+padding-right: 30px;
+vertical-align: middle;
+border-radius: 20px 40px;
+border: 3px solid rgb(7, 241, 194);
+
+}
+div.field {padding-bottom: 15px;}
+label {
+display: block;
+float: left;
+width: 220px;
+height: 15px;
+}
+input[type="button"], input[type="submit"] {
+background-color: navy;
+box-shadow: 0 0 4px white;
+color: white;
+border-radius: 1em;
+}
+input[type="text"], input[type="email"] {
+background-color: rgba(255,255,255,.5);
+color: rgba(255,255,255,1);
+box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+width: 220px;
+}
+input[type="date"] {
+width: 224px;
+box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+}
+select {
+width: 228px;
+box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+}
+input[type="text"]:focus {
+background-color: rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+
+}
+
+</style>
+</head>
+<body>
+<form method="post">
+<h1>Регистрация постоянного клиента</h1>
+<div class="field">
+<label>Фамилия:</label>
+<input type="text">
+</div>
+<div class="field">
+<label>Имя:</label>
+<input type="text">
+</div>
+<div class="field">
+<label>Отчество:</label>
+<input type="text">
+</div>
+<div class="field">
+<label>Ваш возраст:</label>
+<input type="text">
+</div>
+<div class="field">
+<label>Пол:</label>
+<input type="checkbox">мужской
+<input type="checkbox">женский
+</div>
+<div class="field">
+<label>Email:</label>
+<input type="email">
+</div>
+<div class="field">
+<label>Страна проживания:</label>
+<input type="text">
+</div>
+<div class="field">
+<label>Откуда вы узнали о нас?</label>
+<select>
+<option value="1">Выберите вариант</option>
+<option value="2">От знакомых</option>
+<option value="3">Из рекламы</option>
+<option value="4">Из других источников</option>
+</select>
+</div>
+<div class="field">
+<label>Дата заполнения:</label>
+<input type="date">
+</div>
+<div class="field">
+<div class="field">
+<label></label>
+<input type="submit" value="Регистрация" class="c1">
+<input type="button" value="Отмена" class="c1">
+</div>
+</form>
+</body>
+</html>

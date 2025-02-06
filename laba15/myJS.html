@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .photo {
+            position: relative;
+            width: 400px;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        .description {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="photo" id="photo1">
+            <img src="cotik.jpg" alt="Котик">
+            <div class="description">Мили котик.<br>:3</div>
+        </div>
+        <div class="photo" id="photo2">
+            <img src="cotik.jpg" alt="Котик">
+            <div class="description">мИЛИ КОТИК.<br>:3</div>
+        </div>
+        <div class="photo" id="photo3">
+            <img src="cotik.jpg" alt="Котик">
+            <div class="description">KOTIK MILI.<br>:3</div>
+        </div>
+    </section>
+
+    <script>
+        // Для первой фотографии
+        let photo1 = document.getElementById('photo1');
+        let description1 = photo1.querySelector('.description');
+
+        photo1.addEventListener('mouseenter', () => {
+            description1.style.display = 'block';
+        });
+
+        photo1.addEventListener('mouseleave', () => {
+            description1.style.display = 'none';
+        });
+
+        // Для второй фотографии
+        let photo2 = document.getElementById('photo2');
+
+        photo2.addEventListener('click', () => {
+            photo2.style.border = '5px solid red';
+        });
+
+        photo2.addEventListener('mouseleave', () => {
+            photo2.style.border = 'none';
+        });
+
+        // Для третьей фотографии
+        let photo3 = document.getElementById('photo3');
+        let originalSrc = 'cotik.jpg'; // Замените на путь к изображению
+        let hoverSrc = 'cotik-hover.jpg'; // Замените на путь к изображению при наведении
+
+        photo3.addEventListener('mouseenter', () => {
+            photo3.querySelector('img').src = hoverSrc;
+        });
+
+        photo3.addEventListener('mouseleave', () => {
+            photo3.querySelector('img').src = originalSrc;
+        });
+    </script>
+</body>
+</html>

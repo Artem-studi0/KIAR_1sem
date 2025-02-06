@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 300px 1fr 370px;
+            grid-template-areas:
+            "area1 area1 area1"
+            "area2 area3 area4"
+            "area5 area5 area5";
+            gap: 20px;
+            padding: 10px;
+        }
+        .block{
+            height: 515px;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+        .block:nth-child(1){
+            height: 100px;
+            grid-area: area1;
+        }
+        .block:nth-child(2){
+            grid-area: area2;
+        }
+        .block:nth-child(3){
+            grid-area: area3;
+        }
+        .block:nth-child(4){
+            grid-area: area4;
+        }
+        .block:nth-child(5){
+            height: 100px;
+            grid-area: area5;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style-type: none;
+            height: 100px;
+        }
+        a{
+            text-decoration: none;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        article, aside{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="block">
+            <h1>Ресурс, содержащий информацию по HTML5,
+                СSS3 и Grid-верстке</h1>
+        </header>
+        <nav class="block">
+            <ul>
+                <li><a href="https://htmlbook.ru/html5">HTML 5</a></li>
+                <li><a href="https://html5book.ru/css-css3/">CSS 3</a></li>
+                <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout">Grid - верстка</a></li>
+            </ul>
+        </nav>
+        <article class="block">
+            <p>HTML5 (англ. HyperText Markup Language, version 5) — язык для структурирования и представления содержимого всемирной паутины. Это пятая версия HTML. Хотя стандарт был завершён (рекомендованная версия к использованию) только в 2014 году[1][2] (предыдущая, четвёртая, версия опубликована в 1999 году[3]), уже с 2013 года[4] браузерами оперативно осуществлялась поддержка, а разработчиками — использование рабочего стандарта (англ. HTML Living Standard). Цель разработки HTML5 — улучшение уровня поддержки мультимедиа-технологий с одновременным сохранением обратной совместимости, удобочитаемости кода для человека и простоты анализа для парсеров. </p>
+            <p>Спецификация CSS3 — это неоспоримое будущее в области декоративного оформления веб-страниц, и ее разработка еще далека от завершения. Большинство модулей все еще продолжает совершенствоваться и модифицироваться, и ни один браузер не поддерживает все модули. Это означает, что CSS3 испытывает такие же сложности, как и HTML5. Веб-разработчикам нужно решать, какие возможности использовать, а какие игнорировать, а также каким образом заполнить зияющие пробелы в браузерной поддержке.
+        </article>
+        <aside class="block">
+            <p>CSS Grid это новая модель для создания шаблонов, оптимизированная для создания двумерных макетов. Она идеально подходит для: шаблонов сайтов, форм, галерей и всего, что требует точного и отзывчивого позиционирования.
+
+        </aside>
+        <footer class="block">
+            <p>copyright 2023 information</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+
+.container {
+   
+   display: block;
+   display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    text-align: center;
+    
+ 
+  
+}
+
+.block1 {
+   
+    border:12px outset rgb(249, 8, 8);
+    color: rgb(0, 0, 0); 
+    padding: 10px; 
+    margin-top: 10px; 
+    margin: 5px;
+    height: 50px;
+    width: 40px;
+    text-align: center; 
+   display: flex;
+   justify-content: center;  
+   align-items: center;
+  font-size: xx-large;
+    
+   
+}
+.block2 {
+    border-width: 12px;
+    border-style: dashed;
+    margin:5px;
+    padding-top:25px;
+    padding-left:20px;
+    border-color: #01960b;
+    color: rgb(0, 0, 0); 
+   padding:10px;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+  height: 50px;
+  width: 40px;;
+    text-align: center; 
+    
+    font-size: xx-large;
+}
+.block3 {
+    border-width: 12px;
+    margin:5px;
+    border-style: dotted;
+    border-color: #1a00b0;
+    color: rgb(0, 0, 0); 
+    padding: 10px; 
+    margin-top: 10px; 
+    text-align: center; 
+    display: flex;
+   justify-content: center; 
+   align-items: center;
+    height:50px;
+    width:40px;
+    font-size: xx-large;
+}
+.block4 {
+    border-width: 12px;
+    margin:5px;
+border-style:  double;
+border-color:#00ffea;
+    color: rgb(0, 0, 0); 
+    padding: 10px; 
+    margin-top: 10px; 
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height:50px;
+    width:40px;
+    font-size: xx-large;
+  
+}
+.block5 {
+    border-width: 12px;
+    margin:5px;
+border-style:  groove;
+border-color: rgb(255, 0, 255);
+    color: rgb(0, 0, 0); 
+    padding: 10px; 
+    margin-top: 10px;
+    text-align: center; 
+    display: flex;
+   justify-content: center;  
+   align-items: center;
+    height:50px;
+    width:40px;
+    font-size: xx-large;
+ 
+}
+.block6 {
+    border-width: 12px;
+    margin:5px;
+border-style:   inset;
+border-color:rgb(251, 255, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px; 
+    margin-top: 10px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    height:50px;
+    width:40px;
+    font-size: xx-large;
+    
+}
+.block7 {
+    border: 12px solid ;
+    margin:5px;
+    color: rgb(0, 0, 0); 
+    padding: 10px; 
+    margin-top: 10px; 
+    text-align: center; 
+    height:50px;
+    width:40px;
+    display: flex;
+   justify-content: center;  
+   align-items: center;
+   font-size: xx-large;
+   
+}

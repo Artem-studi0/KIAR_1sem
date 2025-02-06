@@ -1,0 +1,13 @@
+@import "nav";
+@import "aside";
+@import "text";
+@import "_mixin";
+@import "footer";
+@import"_function";
+.flex-container{
+    @include flex;
+}
+$ll: rgba(250, 139, 248, 0.068);
+body{
+    background-color: $ll;
+}

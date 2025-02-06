@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <style>
+            @media (max-width: 480px){
+                
+                .menu span{
+                    color:rgb(0, 0, 0);
+                    font-family: 'Roboto', Helvetica;
+                    position:absolute;
+                    right:20px;
+                    top:12px;
+                }
+                .second{
+                    top:21px;
+                }
+                .third{
+                    top:15px;
+                }
+                .container-2 div{
+                    margin-bottom: 10px;
+                }
+                nav .container-2{
+                    display: none;
+                }
+                nav> .container-2{
+                    display: block;
+                }
+            }
+            .container-1, .container-2{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+            .container-1 {
+                height: 30px;
+                margin-bottom: 20px;
+            }
+            .zag{
+               border: 1px solid black;
+               flex-grow: 1;
+               text-align: center;
+               font-size: 20px;
+            }
+            .div1{
+                border: 1px solid black;
+                flex-basis: 30%;
+                text-align: center;
+            }
+            .div2{
+                border: 1px solid black;
+                flex-basis: 35%;
+            }
+            .div3{
+                border: 1px solid black;
+                flex-basis: 30%;
+            }
+            video{
+                width: 80%;
+                margin: 5px;
+            }
+            audio{
+                width: 97%;
+                margin: 5px;
+            }
+            span{
+                color:rgba(240, 248, 255, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="container-1">
+                <div class="zag"> 
+                    Flexbox-верстка
+                   
+                    <span>&#8801</span>
+                </div>
+            </div>
+            <div class="container-2">
+                    <div class="div1">
+                        <video src="media/цветок.mp4" controls></video>
+                        <video src="media/небо.mp4" controls></video>
+                        <video src="media/парашюты.mp4" controls></video>
+                    </div>
+                    <div class="div2">
+                        <p>Flexbox-верстка — разметка макетов веб-страниц, которая позволяет 
+                        автоматически настраивать ширину элементов, находящихся внутри flex контейнера. Для применения данного способа разметки следует учитывать 
+                        разделение применяемых свойств на свойства flex-контейнера и свойства 
+                        flex-элемента.</p>
+                        <p>С помощью display: flex; осуществляется преобразование HTML элемента в flex-контейнер, а элементы находящийся внутри него в flex элементы. По умолчанию flex-элементы помещаются друг за другом в одной 
+                        строке. Свойство flex-flow позволяет выбрать направление отображения 
+                        элементов в контейнере, а также указать их перенос на следующую строку. 
+                        Первое значение определяет направление, а второе перенос на следующую 
+                        строку.</p>
+                    </div>
+                    <div class="div3">
+                        <audio controls>
+                            <source src="media/drop-it-124014.mp3" type="audio/mp3">
+                        </audio>
+                        <audio controls>
+                            <source src="media/mountain-path-125573.mp3" type="audio/mp3">
+                        </audio>
+                        <audio controls>
+                            <source src="media/please-calm-my-mind-125566.mp3" type="audio/mp3">
+                        </audio>
+                    </div>        
+            </div>  
+        </nav>  
+    </body>
+</html>

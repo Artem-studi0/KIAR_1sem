@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Данные студента</title>
+<style>
+body{
+font-size: 1.2em;
+color: white;
+}
+h1 {text-align: center;}
+form {
+width: 460px;
+background-color: rgb(128, 127, 129);
+padding-top: 2px;
+padding-left: 30px;
+padding-right: 30px;
+vertical-align: middle;
+border: 3px solid rgb(0, 0, 0);
+}
+div.field {padding-bottom: 15px;}
+label {
+display: block;
+float: left;
+width: 220px;
+height: 15px;
+}
+input[type="text"], input[type="email"] {
+background-color: rgba(255,255,255,.5);
+color: rgba(255,255,255,1);
+box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+width: 220px;
+}
+select {
+width: 228px;
+margin-top:12px;
+margin-bottom: 12px;
+box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+}
+footer {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f1f1f1;
+  color: #333;
+}
+</style>
+</head>
+<body>
+<form method="post">
+<h1>Данные студента</h1>
+<div class="field">
+<label>Фамилия:</label>
+<input type="text" id="surname">
+</div>
+<div class="field">
+<label>Имя:</label>
+<input type="text" id="name">
+</div>
+<div class="field">
+<label>Отчество:</label>
+<input type="text" id="patronymic">
+</div>
+<div class="field">
+<label>Социальные сети:</label>
+<input type="checkbox" id="vk">VK
+<input type="checkbox" id="inst">Instagram
+<input type="checkbox" id="tg">Tg
+</div>
+<div class="field">
+<label>Email:</label>
+<input type="email" id="email">
+</div>
+<div class="field">
+<label>Факультет:</label>
+<select id="faculty">
+<option value="1">Выберите вариант</option>
+<option value="2">Хтит</option>
+<option value="3">Лесники</option>
+<option value="4">Технари</option>
+</select>
+</div>
+<div class="field">
+<label>Группа:</label>
+<select id="group">
+  <option value="1">Выберите вариант</option>
+  <option value="2">6</option>
+  <option value="3">7</option>
+  <option value="4">8</option>
+</select>
+</div>
+<div class="field">
+<label>Курс:</label>
+<select id="course">
+  <option value="1">Выберите вариант</option>
+  <option value="2">1</option>
+  <option value="3">2</option>
+  <option value="4">3</option>
+</select>
+</div>
+<div class="field">
+<label></label>
+<input type="submit" value="Регистрация" class="c1">
+</div>
+</form>
+<footer id="data-display"></footer>
+
+<script>
+document.querySelector('form').addEventListener('submit', function() {
+    event.preventDefault();
+
+  let surname = document.getElementById("surname").value;
+  let name = document.getElementById("name").value;
+  let patronymic = document.getElementById("patronymic").value;
+
+  let socialNetworks = [];
+  if (document.getElementById("vk").checked) {
+    socialNetworks.push("VK");
+  }
+  if (document.getElementById("inst").checked) {
+    socialNetworks.push("Instagram");
+  }
+  if (document.getElementById("tg").checked) {
+    socialNetworks.push("Telegram");
+  }
+  let socialNetworksText = socialNetworks.join(", ");
+
+  let email = document.getElementById("email").value;
+
+  let facultySelect = document.getElementById("faculty");
+  let faculty = facultySelect.options[facultySelect.selectedIndex].text;
+
+  let groupSelect = document.getElementById("group");
+  let group = groupSelect.options[groupSelect.selectedIndex].text;
+
+  let courseSelect = document.getElementById("course");
+  let course = courseSelect.options[courseSelect.selectedIndex].text;
+
+  let dataDisplay = document.getElementById("data-display");
+  dataDisplay.innerHTML = `
+    Фамилия: ${surname}<br>
+    Имя: ${name}<br>
+    Отчество: ${patronymic}<br>
+    Социальные сети: ${socialNetworksText}<br>
+    Email: ${email}<br>
+    Факультет: ${faculty}<br>
+    Группа: ${group}<br>
+    Курс: ${course}
+  `;
+});
+
+</script>
+</body>
+</html>

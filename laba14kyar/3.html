@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+    
+    <style>
+        
+        .elka {
+           
+            width: 400px;
+            height: 630px;
+            margin:auto;
+
+        }
+        svg {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="elka">
+
+          
+        
+        <svg width="1000" height="1000" viewbox="0 0 2500 2500">
+            
+            <line x1="500" y1="50" x2="170" y2="950" stroke-width="2" stroke="black"></line>
+            <line x1="500" y1="50" x2="820" y2="950" stroke-width="2" stroke="black"></line>
+            <line x1="200" y1="950" x2="820" y2="950" stroke-width="2" stroke="black"></line>
+            <rect x="420" y="930" width="80" height="79"></rect>
+            <path id="path1" d="M399,110 C399,300 610,170 610,160"
+                stroke="green" stroke-width="6" fill="none">
+                <animate attributeName="stroke" from="yellow" to="green" fill="freeze" dur="1s" repeatCount="200"/>
+            </path>
+            
+            <path id="path2" d="M315,280 C350,280 550,390 615,160"
+                stroke="blue" stroke-width="6" fill="none">
+                <animate attributeName="stroke" from="green" to="blue" fill="freeze" dur="1s" repeatCount="200"/>
+            </path>
+            <path id="path3" d="M315,280 C330,495 705,410 715,360"
+                stroke="purple" stroke-width="6" fill="none">
+                <animate attributeName="stroke" from="blue" to="purple" fill="freeze" dur="1s" repeatCount="200"/>
+            </path>
+            <path id="path4" d="M715,370 C500,700 430,500 215,560"
+                stroke="orange" stroke-width="6" fill="none">
+                <animate attributeName="stroke" from="blue" to="orange" fill="freeze" dur="1s" repeatCount="200"/>
+            </path>
+            <path id="path5" d="M215,560 C500,750 620 850,840 650"
+                stroke="orange" stroke-width="6" fill="none">
+                <animate attributeName="stroke" from="blue" to="purple" fill="freeze" dur="1s" repeatCount="200"/>
+            </path>
+            <path id="path6" d="M840 650 C600,1150 450 1050,118 850"
+                stroke="orange" stroke-width="6" fill="none">
+                <animate attributeName="stroke" from="blue" to="purple" fill="freeze" dur="1s" repeatCount="200"/>
+            </path>
+
+            <!-- Добавление шариков с анимацией переливания -->
+            <circle cx="450" cy="150" r="20" fill="red">
+                <animate attributeName="fill" values="red;orange;red" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="600" cy="220" r="15" fill="blue">
+                <animate attributeName="fill" values="blue;cyan;blue" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="370" cy="300" r="25" fill="yellow">
+                <animate attributeName="fill" values="yellow;gold;yellow" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="400" cy="400" r="10" fill="white">
+                <animate attributeName="fill" values="white;wheat;white" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="600" cy="850" r="18" fill="purple">
+                <animate attributeName="fill" values="purple;violet;purple" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="230" cy="800" r="12" fill="pink">
+                <animate attributeName="fill" values="pink;lightpink;pink" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="370" cy="620" r="14" fill="orange">
+                <animate attributeName="fill" values="orange;peachpuff;orange" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="700" cy="370" r="16" fill="lightblue">
+                <animate attributeName="fill" values="lightblue;deepskyblue;lightblue" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="500" cy="450" r="20" fill="gold">
+                <animate attributeName="fill" values="gold;yellow;gold" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="600" cy="530" r="22" fill="cyan">
+                <animate attributeName="fill" values="cyan;lightcyan;cyan" dur="1s" repeatCount="indefinite" />
+            </circle>
+            <circle cx="800" cy="760" r="22" fill="cyan">
+                <animate attributeName="fill" values="cyan;lightcyan;cyan" dur="1s" repeatCount="indefinite" />
+            </circle>
+        </svg>
+    </div>
+</body>
+</html>

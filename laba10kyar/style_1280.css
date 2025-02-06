@@ -1,0 +1,7 @@
+figcaption{
+    color: green;
+    grid-template-columns: 1fr !important;
+}
+img{
+    width:98vh;
+}

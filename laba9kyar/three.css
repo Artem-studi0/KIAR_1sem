@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.e{
+   display: flex;
+  
+display: inline-grid;
+grid-template-columns: 1fr
+2fr 2fr;
+height:100vh;
+grid-gap: 2px;
+
+}
+.hihi{
+    border:2px solid black;
+    width:175px;
+    height:300px;
+    overflow: auto;
+}
+.hey{
+    border:2px solid black;
+    width:50px;
+    height:300px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+
+}

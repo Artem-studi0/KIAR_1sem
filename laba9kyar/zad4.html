@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="skeleton.css">
+  		<style>
+         .row1 div{
+		border:none;
+		background-color: white;
+		height: 100px;
+		}
+        .row2 div{
+		
+			height: 140px;
+		}
+        .row3 div{
+		
+        height: 340px;
+    }
+		.row1{
+            height: 100px;
+        }
+        .row2{
+            height: 140px;
+        }
+        .row3{
+            height:340px;
+        }
+        div[class*="row"]{
+            margin:10px;
+        }
+        div[class*="column"]{
+            border: 2px solid rgb(0, 0, 0);
+			background-color: chartreuse;
+			text-align: center;
+			color:rgb(0, 0, 0);
+        }
+	
+        #menu 
+        {
+            list-style-type: none;
+            display: flex;
+        }
+        #menu li
+        {
+            display: inline-block;
+            margin: auto;
+        }
+        a
+        {
+            display: inline-block; 
+            padding: 35px 27px 35px 30px;
+            text-decoration: none;
+            border: 1px solid rgb(0, 0, 0);
+			background-color: rgba(255, 191, 250, 0.433);
+			color:rgb(0, 0, 0);
+        }
+		img{
+			width: 180px;
+			height:95px;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row1">
+				<div class="three columns">
+					<img src="bgtu.jpg">
+				</div>
+				<div class="nine columns">
+					<nav class="nav">
+						<ol id = "menu">
+							<li><a href = "Задание 1-1.html">Задание1-1</a></li>
+							<li><a href = "Задание 1-2.html">Задание1-2</a></li>
+							<li><a href = "Задание 2.html">Задание2</a></li>
+							<li><a href = "Задание 3_1.html">Задание3-1</a></li>
+							<li><a href = "Задание 3_2.html">Задание3-2</a></li>            
+						</ol>
+					</nav>
+				</div>
+            </div>
+			<div class="row2">
+					<div class="three columns">
+						Фиксированные и гибкие размеры полос
+					</div>
+					<div class="three columns">
+						Расположение элемента
+					</div>
+					<div class="three columns">
+						Создание дополнительных полос для хранения контента
+					</div>
+					<div class="three columns">
+						Управление выравниванием
+					</div>
+            </div>
+			<div class="row3">
+				<div class="three columns">
+					Вы можете создать грид с фиксированными размерами полоc, например используя пиксели.
+					Это установит грид на определенный пиксель, соответствующим желаемому макету.
+					Вы также можете создать грид с гибкими размерами, используя проценты или новую единицу 
+					измерения — «fr», разработанную для этой цели.
+				</div>
+				<div class="three columns">
+					Вы можете размещать элементы в заданном месте на гриде используя номера строк, имена или путём
+					привязки к области грида. Грид также содержит алгоритм управления размещением элементов, не имеющих 
+					явной позиции на гриде.
+				</div>
+				<div class="three columns">
+				    Вы можете определить явную сетку с помощью грид-раскладки. Cпецификация грид-раскладки достаточно 
+					гибкая, чтобы добавить при необходимости дополнительные строки и колонки. Также в нее включены такие 
+					возможности как, например, добавление «стольких колонок, сколько будет помещено в контейнер».
+				</div>
+				<div class="three columns">
+					Грид содержит механизм выравнивания, таким образом мы можем контролировать, как элементы выравниваются 
+					после размещения в области сетки и как выравнивается вся сетка.
+				</div>	
+		</div>
+	</body>
+</html>

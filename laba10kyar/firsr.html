@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>10 Лаба</title>
+        <link href="style_1280.css" rel="stylesheet" media="(max-width:1280px)">
+        <style>
+            @import url(style780.css) (max-width: 768px);
+    
+            @media screen and (max-width: 480px) {
+            figcaption {
+                color: red !important;
+                grid-template-columns: 1fr !important;
+            }
+        }
+video{
+    flex-direction: column;
+    padding:10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    float:inline-start;
+}
+            .container-1 {
+                height: 30px;
+                margin-bottom: 20px;
+            }
+            .zagolovok{
+                flex-grow:1;
+                border:2px solid  black;
+                text-align: center;
+            }
+       
+ .container-1, .container-2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+figure, img {
+            width: 100%;
+        }
+
+       
+
+.figure{
+margin:0;
+}
+.one{
+   flex-basis: 30%;
+    border:1px solid black;
+    
+}
+.two{
+    flex-basis: 38%;
+    border:1px solid black;
+  
+}
+.three{
+    flex-basis: 30%;
+    border:1px solid black;
+    
+}
+.main-menu {
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.main-menu a{
+    display: block;
+    border-bottom: 1px solid ;
+    padding: .5em;
+    text-decoration: none;
+    text-align: center;
+}
+.toggle-button {
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 2%;
+    width: 98%;
+   
+}
+
+span{
+    margin-left: 15px;
+}
+#menu-mobile:checked + nav .main-menu {
+    display: block;
+  
+}
+input[type*="checkbox"]{
+    display: none;
+}
+@media screen and (max-width: 560px) {
+    figcaption {
+                color: red;
+                display: flex;
+                flex-direction: column;
+            }
+    .container-1{
+        display: none;
+    }
+    .container-2 >div{
+        margin-bottom: 30px;
+    }
+}  
+.video-column,
+        .text-column,
+        .audio-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+@media screen and (min-width: 560px)  { 
+    
+    .container-1, .container-2,.container-3 {
+        flex-flow: row wrap;
+    }
+    .toggle-button {
+    display: none;
+    }
+    .main-menu {
+    display: block;
+    margin: 20px; 
+    height: 60px;
+    }
+    .main-menu li {
+    width: calc(100% / 10);
+    text-align: center;
+    display: inline-block;
+    padding-top: 10px;
+    }
+    .main-menu a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(58, 58, 83);
+    text-transform: capitalize;
+    border-bottom: 0;
+    }
+}
+.row{
+    flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+}
+figure{
+          background-image: url(cherepah.jpg);
+          background-repeat: no-repeat;
+          width: 300px;
+          height:300px;
+          flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        }
+        .container {
+           
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container_element:nth-child(1) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .container_element:nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .icon {
+            position: absolute;
+            top: 2px;
+            right: 20px;
+            display: none;
+        }
+
+        </style>
+        <body>
+           
+            <div class="container">
+                <div class="container_element">
+                    <h1>«Flexbox-верстка»</h1>
+                    <p class="icon">&#8801</p>
+                </div>
+            <div class="container-1">
+<div class="zagolovok">zagolooooooooooooovok</div>
+            </div>
+            <div class="container-2">
+<div class="one" id="id1">
+    <video width="320" height="180" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+</div >
+<div class="two">
+    Flexbox (от англ. flex — гибкий) — это модуль CSS, который позволяет удобно управлять расположением, порядком, размерами и отступами между элементами веб-страницы. Сайты, свёрстанные «флексами», получаются адаптивными, то есть выглядят хорошо на разных устройствах: ПК, ноутбуках, планшетах и смартфонах.
+
+    До появления Flexbox разработчики верстали веб-страницы с помощью таблиц, CSS-свойств position, float и прочих инструментов, которые на самом деле для этого не предназначены. Например, float определяет, с какой стороны текст, а не группа блоков, будет обтекать элемент. Но так как до начала 2010-х других средств не было, разработчикам приходилось прибегать к подобным «костылям».
+</div >
+<div class="three">
+        <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+        <a href="/media/cc0-audio/t-rex-roar.mp3"> Download audio </a>
+        <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+        <a href="/media/cc0-audio/t-rex-roar.mp3"> Download audio </a>
+        <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+        <a href="/media/cc0-audio/t-rex-roar.mp3"> Download audio </a>
+</div>
+            </div>
+            <div class="container_element">
+                <figure>
+                    <img src="fon3.jpg" alt="">
+                    <figcaption>Картинка 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="cherepah.jpg" alt="">
+                    <figcaption>Картинка 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="cherepah.jpg" alt="">
+                    <figcaption>Картинка 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="cherepah.jpg" alt="">
+                    <figcaption>Картинка 4</figcaption>
+                </figure>
+                <figure>
+                    <img src="cherepah.jpg" alt="">
+                    <figcaption>Картинка 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="cherepah.jpg" alt="">
+                    <figcaption>Картинка 6</figcaption>
+                </figure>
+                <figure>
+                    <img src="cherepah.jpg" alt="">
+                    <figcaption>Картинка 7</figcaption>
+                </figure>
+                <figure>
+                    <img src="cherepah.jpg" alt="">
+                    <figcaption>Картинка 8</figcaption>
+                </figure>
+            </div>
+        </div>
+        </body>

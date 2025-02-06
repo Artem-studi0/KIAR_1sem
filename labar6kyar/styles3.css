@@ -1,0 +1,79 @@
+
+.container {
+   
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    text-align: center;
+    
+ 
+  
+}
+
+.block1 {
+   
+    border: 1px solid ;
+    margin-left:17px;
+     padding: 10px; 
+     margin-top: 10px;  
+     height:75px;
+     width:60px;
+     display: flex;
+     background: linear-gradient(to bottom, blue, red)
+   
+    
+   
+}
+.block2 {
+    border: 1px solid ;
+   margin-left:17px;
+    padding: 10px; 
+    margin-top: 10px;  
+    height:75px;
+    width:60px;
+    display: flex;
+   
+    background: repeating-linear-gradient(
+        45deg,
+        red,
+        red 5px,
+        blue 5px,
+        blue 10px
+    );
+}
+.block3 {
+    border: 1px solid ;
+   margin-left:17px;
+    padding: 10px; 
+    margin-top: 10px;  
+    height:75px;
+    width:60px;
+    display: flex;
+    background: radial-gradient(circle, yellow, green);
+  
+}
+.block4 {
+    border: 1px solid ;
+   margin-left:17px;
+    padding: 10px; 
+    margin-top: 10px;  
+    height:75px;
+    width:60px;
+    display: flex;
+    background: repeating-radial-gradient(circle, rgb(21, 151, 51) 6% 12%, yellow 12% 24%);
+      
+  
+  
+}
+.block5 {
+    border: 1px solid ;
+   margin-left:17px;
+    padding: 10px; 
+    margin-top: 10px;  
+    height:75px;
+    width:60px;
+    display: flex;
+    background-image: radial-gradient(yellow, green, transparent),
+    linear-gradient(to top, magenta, blue);
+}

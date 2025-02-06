@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    
+ .nav ul{
+    margin:0;
+    padding:0;
+ }
+ .nav>ul>li{
+    float:left;
+    background-color: yellow;
+    position: relative;
+    border:1px solid black;
+    width:135px;
+ }
+.nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.nav li a:link{
+    color: rgb(51, 25, 7);
+}
+.nav li .second {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left:0;
+}
+nav li:hover .second{
+    display: block;
+}
+.nav li li {
+    width:125px;
+}
+.second a {
+    background-color: rgb(232, 133, 63);
+    border:  2px dashed rgb(0, 0, 0);
+    border-top: 0;
+    color: rgb(70, 8, 8);
+}
+.second a:hover{
+    background-color: rgb(196, 112, 23);
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>-</title>
+</head>
+<body>
+   <nav class="nav">
+        <ul>
+        <li><a href="../laba5kyar/4.html">Меню</a>
+                <ul class="second">
+                    <li><a href="../laba3kyar/4.html"> Задание из лабы 3</a></li>
+                    <li><a href="../laba5kyar/3-3.html">Задание из лабы 5</a></li>
+                    <li><a href="../laba5kyar/3-3.html">Задание из лабы 5</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+  </body>
+</html>

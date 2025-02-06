@@ -1,0 +1,4 @@
+figcaption{
+    color: blue !important;
+    grid-template-columns: 1fr !important;
+}

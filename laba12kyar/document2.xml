@@ -1,0 +1,38 @@
+<?xml-stylesheet type="text/css" href="styles.css"?> 
+<!DOCTYPE store [ <!ELEMENT store (products)> 
+<!ELEMENT products (product+)>
+<!ELEMENT product (name, description, price)> 
+<!ELEMENT name (#PCDATA)> 
+<!ELEMENT description (#PCDATA)> 
+<!ELEMENT price (#PCDATA)> 
+<!ATTLIST product id ID #REQUIRED>
+]>
+<store>
+<products>
+<product id="product1">
+<name>Смартфон</name>
+<description>Смартфон с 64 ГБ памяти и камерой 12 МП.</description>
+<price>19999</price>
+</product>
+<product id="product2">
+<name>Ноутбук</name>
+<description>Мощный ноутбук с процессором Intel i5 и 8 ГБ ОЗУ.</description>
+<price>49999</price>
+</product>
+<product id="product3">
+<name>Наушники</name>
+<description>Беспроводные наушники с шумоподавлением.</description>
+<price>2999</price>
+</product>
+<product id="product4">
+<name>Планшет</name>
+<description>Планшет с экраном 10 дюймов и 128 ГБ памяти.</description>
+<price>24999</price>
+</product>
+<product id="product5">
+<name>Фотокамера</name>
+<description>Цифровая зеркальная камера с объективом 18-55 мм.</description>
+<price>34999</price>
+</product>
+</products>
+</store>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="styles.xsl"?>
+<students>
+    <student id="1">
+        <name>не я</name>
+        <grade>5</grade>
+    </student>
+    <student id="2">
+        <name>чел 50/50 выучил 3 ему</name>
+        <grade>3</grade>
+    </student>
+    <student id="3">
+        <name>легенда</name>
+        <grade>9</grade>
+    </student>
+    <student id="4">
+        <name>я</name>
+        <grade>8</grade>
+    </student>
+    <student id="5">
+        <name>ну мдаа</name>
+        <grade>2</grade>
+    </student>
+</students>

@@ -1,0 +1,97 @@
+nav {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    align-content: space-between;
+    flex: 1 1 100%;
+
+    height: 10vh;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  nav input {
+    display: none;
+  }
+  nav label {
+    height: 100%;
+  }
+  nav label img {
+    height: 100%;
+    margin-left: 50px;
+  }
+  nav ul {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    align-content: space-between;
+    margin-top: 10px;
+    padding: 0;
+    flex: 0 1 100%;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    justify-content: end;
+  }
+  nav ul li {
+    display: inline-block;
+    width: 20%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  nav ul li a {
+    background-color: rgb(15, 15, 15);
+    transition: 0.2s;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px black;
+    box-sizing: border-box;
+    color: rgb(82, 0, 104);
+    padding: 7px 24px 10px 24px;
+    width: 80%;
+    height: 35px;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+  nav ul li a:hover {
+    box-shadow: 1px 1px 1px black;
+    transform: translate(1px 1px);
+  }
+  @media (max-width: 700px) {
+    nav {
+      height: 100%;
+      margin-bottom: 50px;
+    }
+    nav label {
+      width: 96.5%;
+      height: 20px;
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+    }
+    nav label img {
+      margin-left: 5px;
+    }
+    nav ul {
+      
+      opacity: 0;
+      position: absolute;
+      flex: 0 1 100%;
+      flex-wrap: wrap;
+      margin-left: 50px;
+    }
+    nav ul li {
+      margin-top: 10px;
+      flex: 1 1 100%;
+    }
+    nav input:checked ~ ul {
+      transform: translateY(5px);
+      opacity: 1;
+      position: relative;
+    }
+    nav input:checked + label {
+      top: 5px;
+    }
+    nav input:checked + label img {
+      margin: 5px 0 0 10px;
+    }
+  }/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,50 @@
+body{
+    background-image: url('bgtu.jpg');
+  background-position: right,top;
+
+width: 20px;
+height: 20px;
+}
+p
+{text-indent: 40px;
+    font-size: 20px;
+    margin-top: 0;
+margin-bottom: 0; 
+ }
+img.img1{
+width:200px;
+height:200px;           
+position:fixed;
+right:1%;
+}  
+img.img2{
+width:600px;
+height:400px;           
+float: left;
+margin-right:10px;
+} 
+img.img3{
+width:600px;
+height:400px;           
+float: right;
+margin-left: 10px;
+margin-top: 50px;
+} 
+p.p3{
+ clear: left;
+}      
+ul li{
+list-style:none;
+line-height:30px;
+}
+ul {
+list-style-image: url(g.jpg);
+}
+ul li:before {
+content:"";
+background-image:url(g.jpg);
+float:left;
+width:30px;
+height:30px;
+margin-right:10px;
+}
